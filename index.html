@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp: Show the Local Weather</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+
+  <div class="row">
+    <div class="eight columns offset-by-two">
+      <h1 class="title">Weather<span class="location"></span></h1>
+      <div class="row">
+        <div class="one-half column">
+          <canvas class="u-max-full-width" id="skycon" width="150" height="150"></canvas>
+        </div>
+        <div class="one-half column">
+          <div class="celsius"></div>
+          <div class="fahrenheit hidden"></div>
+          <div class="description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="eight columns offset-by-six">
+      <div class="details">
+        <ul>
+          <li>Temperature range: <span class="celsius-min"></span><span class="fahrenheit-min hidden"></span> &hellip; <span class="celsius-max"></span><span class="fahrenheit-max hidden"></span></li>
+          <li>Wind speed: <span class="wind-speed"></span></li>
+          <li>Cloudiness: <span class="clouds"></span></li>
+          <li>Humidity: <span class="humidity"></span></li>
+          <li>The sun rises at <span class="sunrise"></span> and sets at <span class="sunset"></span></li>
+        </ul>
+        <button>°C/°F</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
